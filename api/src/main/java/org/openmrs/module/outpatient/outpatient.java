@@ -16,7 +16,7 @@ package org.openmrs.module.outpatient;
 import java.io.Serializable;
 import org.openmrs.BaseOpenmrsObject;
 import org.openmrs.BaseOpenmrsMetadata;
-//java libraries
+//java classes
 import java.util.Serilizable;
 import java.util.Date;
 import java.util.HashSet;
