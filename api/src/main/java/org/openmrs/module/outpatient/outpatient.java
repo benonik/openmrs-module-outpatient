@@ -16,6 +16,11 @@ package org.openmrs.module.outpatient;
 import java.io.Serializable;
 import org.openmrs.BaseOpenmrsObject;
 import org.openmrs.BaseOpenmrsMetadata;
+//java libraries
+import java.util.Serilizable;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * It is a model class. It should extend either {@link BaseOpenmrsObject} or {@link BaseOpenmrsMetadata}.
@@ -25,6 +30,8 @@ public class outpatient extends BaseOpenmrsObject implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Integer id;
+	private Integer outPatientId;
+	private String phoneNumber;
 	
 	@Override
 	public Integer getId() {
