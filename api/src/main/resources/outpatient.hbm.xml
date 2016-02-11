@@ -13,8 +13,8 @@
                   <param name="property">patient</param>
             </generator>
 		</id>
-      <property name="outPatientId" type="java.lang.Integer" column="outPatient_id" unique="true"/>
-        <property name="name" type="java.lang.String" column="name"/>
+      <property name="outPatientId" type="java.lang.Integer" column="outPatient_id"/>
+        <property name="name" type="java.lang.String" column="name" unique="true"/>
         <property name="phoneNumber" type="java.lang.String" column="phone_number"/>
         <property name="resident" type="java.lang.String" column="resident"/>
         <property name="createdBy" type="java.lang.String" column="created_by"/>
