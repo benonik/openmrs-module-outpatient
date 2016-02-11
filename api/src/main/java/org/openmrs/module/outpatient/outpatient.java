@@ -31,16 +31,81 @@ public class outpatient extends BaseOpenmrsObject implements Serializable {
 	
 	private Integer id;
 	private Integer outPatientId;
+	private String name;
 	private String phoneNumber;
+	private String resident;
+
+	//change and creation meta-data
+
+	private String createdBy;
+	private Date  dateCreated;
+	private String changedBy;
+	private Date  dateChanged;
+
+	//setters and getters
+	public Integer getOutpatientId(){
+		return outPatientId;
+	}
+	public void setOutPatientId(Integer outPatientId)
+	{
+		this.outPatientId=outPatientId;
+	}
+	public  String getName(){
+		return name;
+	}
+	public void setName(){
+		this.name=name;
+	}
+
+	public String getPhoneNumber(){
+		return phoneNumber;
+	}
+	public void setPhoneNumber(){
+		this.phoneNumber=phoneNumber;
+	}
+	public String getResident(){
+		return resident;
+	}
+	public void setResident(){
+		this.resident=resident;
+	}
+	//some code to go here
+    //
+    public String getCreatedBy(){
+        return createdBy;
+    }
+    public void setCreatedBy(String changedBy){
+        this.changedBy=changedBy;
+    }
+    public Date getDateCreated(){
+        return dateCreated;
+    }
+    public void setDateCreated(Date dateCreated){
+        this.dateCreated=dateCreated;
+    }
+    public String getChangedBy(){
+        return changedBy;
+    }
+    public void setChangedBy(String changedBy){
+        this.changedBy=changedBy;
+    }
+    public Date getDateChanged(){
+        return dateChanged;
+    }
+    public void setDateChanged(String dateChanged){
+        this.dateChanged=dateChanged;
+    }
+
+
 	
 	@Override
 	public Integer getId() {
-		return id;
+		return getOutpatientId();
 	}
 	
 	@Override
 	public void setId(Integer id) {
-		this.id = id;
+		setOutPatientId(id);
 	}
 	
 }
